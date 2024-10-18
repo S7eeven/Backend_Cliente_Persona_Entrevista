@@ -35,7 +35,7 @@ public class ClienteControllerTest {
 
         Mockito.when(clienteService.crearCliente(Mockito.any(Cliente.class))).thenReturn(cliente);
 
-        mockMvc.perform(post("/clientes")
+        mockMvc.perform(post("/api/clientes")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(objectMapper.writeValueAsString(cliente)))
                 .andExpect(status().isOk())
@@ -58,7 +58,7 @@ public class ClienteControllerTest {
 
         Mockito.when(clienteService.listarClientes()).thenReturn(Arrays.asList(cliente1, cliente2));
 
-        mockMvc.perform(get("/clientes"))
+        mockMvc.perform(get("/api/clientes"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.size()").value(2));
     }

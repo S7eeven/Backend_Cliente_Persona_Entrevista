@@ -4,14 +4,13 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import com.entrevista.cliente.persona.springboot_entrevista.dto.ClienteDTO;
 import com.entrevista.cliente.persona.springboot_entrevista.entity.Cliente;
 import com.entrevista.cliente.persona.springboot_entrevista.exception.ResourceNotFoundException;
 import com.entrevista.cliente.persona.springboot_entrevista.service.ClienteService;
 
 @RestController
-@RequestMapping("/clientes")
+@RequestMapping("/api/clientes")
 public class ClienteController {
      @Autowired
     private ClienteService clienteService;

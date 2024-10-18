@@ -4,7 +4,6 @@ public class ClienteDTO {
     private Long clienteid;
     private String nombre;
 
-    // Getters y Setters
     public Long getClienteid() {
         return clienteid;
     }

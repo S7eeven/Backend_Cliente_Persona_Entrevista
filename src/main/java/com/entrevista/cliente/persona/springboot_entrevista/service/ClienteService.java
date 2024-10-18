@@ -2,7 +2,6 @@ package com.entrevista.cliente.persona.springboot_entrevista.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import com.entrevista.cliente.persona.springboot_entrevista.entity.Cliente;
 import com.entrevista.cliente.persona.springboot_entrevista.entity.Persona;
 import com.entrevista.cliente.persona.springboot_entrevista.repository.ClienteRepository;
